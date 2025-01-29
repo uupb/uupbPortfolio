@@ -62,6 +62,67 @@ main {
     color: #ccc;
 }
 
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #6f00ff;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 1rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6f00ff;
+    border: 3px solid #1f1c2c;
+    top: 20px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 1;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #6f00ff transparent transparent;
+    top: 20px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.timeline-item:nth-child(odd) {
+    margin-left: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    margin-right: 50%;
+}
+
 @media (max-width: 600px) {
     header {
         font-size: 1.25rem;
