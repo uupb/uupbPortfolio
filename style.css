@@ -64,9 +64,9 @@ main {
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 600px; /* Narrower timeline */
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem 0; /* Reduced padding */
 }
 
 .timeline::before {
@@ -74,31 +74,31 @@ main {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 4px;
+    width: 3px; /* Thinner timeline bar */
     background-color: #6f00ff;
     left: 50%;
-    margin-left: -2px;
+    margin-left: -1.5px; /* Adjusted for thinner bar */
 }
 
 .timeline-item {
-    padding: 1rem;
+    padding: 0.75rem; /* Reduced padding */
     position: relative;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    margin-bottom: 2rem;
+    border-radius: 8px; /* Smaller border radius */
+    margin-bottom: 1.5rem; /* Reduced margin between items */
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 16px; /* Smaller circle */
+    height: 16px; /* Smaller circle */
     border-radius: 50%;
     background-color: #6f00ff;
-    border: 3px solid #1f1c2c;
-    top: 20px;
+    border: 2px solid #1f1c2c; /* Thinner border */
+    top: 15px; /* Adjusted position */
     left: 50%;
-    margin-left: -10px;
+    margin-left: -8px; /* Adjusted for smaller circle */
     z-index: 1;
 }
 
@@ -108,21 +108,30 @@ main {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 10px 10px 10px 0;
+    border-width: 8px 8px 8px 0; /* Smaller arrow */
     border-color: transparent #6f00ff transparent transparent;
-    top: 20px;
+    top: 15px; /* Adjusted position */
     left: 50%;
-    margin-left: -10px;
+    margin-left: -8px; /* Adjusted for smaller arrow */
 }
 
 .timeline-item:nth-child(odd) {
-    margin-left: 50%;
+    margin-left: 45%; /* Adjusted for narrower timeline */
 }
 
 .timeline-item:nth-child(even) {
-    margin-right: 50%;
+    margin-right: 45%; /* Adjusted for narrower timeline */
 }
 
+.timeline-item h2 {
+    font-size: 1.1rem; /* Smaller heading */
+    margin: 0.25rem 0; /* Reduced margin */
+}
+
+.timeline-item p {
+    font-size: 0.8rem; /* Smaller text */
+    margin: 0.25rem 0; /* Reduced margin */
+}
 @media (max-width: 600px) {
     header {
         font-size: 1.25rem;
