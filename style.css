@@ -64,9 +64,9 @@ main {
 
 .timeline {
     position: relative;
-    max-width: 600px; /* Narrower timeline */
+    max-width: 800px;
     margin: 0 auto;
-    padding: 1rem 0; /* Reduced padding */
+    padding: 2rem 0;
 }
 
 .timeline::before {
@@ -74,31 +74,32 @@ main {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 3px; /* Thinner timeline bar */
+    width: 4px; /* Thickness of the timeline bar */
     background-color: #6f00ff;
     left: 50%;
-    margin-left: -1.5px; /* Adjusted for thinner bar */
+    margin-left: -2px; /* Center the bar */
 }
 
 .timeline-item {
-    padding: 0.75rem; /* Reduced padding */
+    padding: 1rem;
     position: relative;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 8px; /* Smaller border radius */
-    margin-bottom: 1.5rem; /* Reduced margin between items */
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
-    width: 16px; /* Smaller circle */
-    height: 16px; /* Smaller circle */
+    width: 16px; /* Circle size */
+    height: 16px; /* Circle size */
     border-radius: 50%;
     background-color: #6f00ff;
-    border: 2px solid #1f1c2c; /* Thinner border */
-    top: 15px; /* Adjusted position */
+    border: 2px solid #1f1c2c;
+    top: 50%; /* Center vertically */
     left: 50%;
-    margin-left: -8px; /* Adjusted for smaller circle */
+    margin-left: -8px; /* Center horizontally */
+    transform: translateY(-50%); /* Fine-tune vertical alignment */
     z-index: 1;
 }
 
@@ -108,21 +109,20 @@ main {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 8px 8px 8px 0; /* Smaller arrow */
+    border-width: 10px 10px 10px 0;
     border-color: transparent #6f00ff transparent transparent;
-    top: 15px; /* Adjusted position */
+    top: 20px;
     left: 50%;
-    margin-left: -8px; /* Adjusted for smaller arrow */
+    margin-left: -10px;
 }
 
 .timeline-item:nth-child(odd) {
-    margin-left: 45%; /* Adjusted for narrower timeline */
+    margin-left: 50%;
 }
 
 .timeline-item:nth-child(even) {
-    margin-right: 45%; /* Adjusted for narrower timeline */
+    margin-right: 50%;
 }
-
 .timeline-item h2 {
     font-size: 1.1rem; /* Smaller heading */
     margin: 0.25rem 0; /* Reduced margin */
