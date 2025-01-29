@@ -11,6 +11,16 @@
             font-family: Arial, sans-serif;
         }
 
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000;
+        }
+
         .timeline {
             position: relative;
             margin: 2rem auto;
@@ -48,17 +58,33 @@
             color: #666;
         }
 
-        .certifications, .interests {
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
             margin: 2rem auto;
             max-width: 800px;
             padding: 1rem;
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
         }
 
-        .certifications h3, .interests h3 {
-            margin: 0;
-            font-size: 1.5rem;
+        .certification-box {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #6f00ff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certification-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .certification-box h3 {
+            font-size: 1rem;
+            color: #fff;
         }
 
         .carousel {
@@ -118,19 +144,15 @@
         </section>
 
         <section class="certifications">
-            <h3>Certifications</h3>
-            <ul>
-                <li>FAA Part 107 Certified</li>
-                <li>Ace Certified Personal Trainer</li>
-                <li>Various Online Certifications</li>
-            </ul>
-        </section>
-
-        <section class="interests">
-            <h3>Personal Interests</h3>
-            <p>Technology (3D Printing, Drones)</p>
-            <p>Outdoor Sports (Kayaking, Snowboarding)</p>
-            <p> Animals (Fish, Reptiles, Dogs & Cats).</p>
+            <div class="certification-box" onclick="window.location.href='https://www.faa.gov/uas/commercial_operators/remote_pilot_certification/';">
+                <h3>FAA Part 107 Certified</h3>
+            </div>
+            <div class="certification-box" onclick="window.location.href='https://www.acefitness.org/education-and-resources/certifications/personal-trainer/';">
+                <h3>Ace Certified Personal Trainer</h3>
+            </div>
+            <div class="certification-box" onclick="window.location.href='#';">
+                <h3>Various Online Certifications</h3>
+            </div>
         </section>
 
         <section class="carousel">
