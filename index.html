@@ -5,6 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 0 1rem;
+        }
+
+        .timeline-event {
+            margin-bottom: 2rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-left: 2px solid #6f00ff;
+            padding-left: 1rem;
+        }
+
+        .timeline-event::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #6f00ff;
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+            top: 0.5rem;
+        }
+
+        .timeline h2 {
+            margin: 0.5rem 0;
+            font-size: 1.25rem;
+        }
+
+        .timeline p {
+            margin: 0.25rem 0;
+            color: #666;
+        }
+
+        .certifications, .interests {
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .certifications h3, .interests h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 800px;
+        }
+
+        .carousel img {
+            max-width: 100%;
+            border-radius: 5px;
+            height: 200px;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 2rem auto;
+        }
+
+        .contact p {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,9 +92,51 @@
     </header>
 
     <main>
-        <section>
-            <h1>My Projects</h1>
-            <p>Explore my portfolio of work, including 3D models, drone scans, and other creative endeavors. Content coming soon!</p>
+        <section class="timeline">
+            <h1>Work Experience</h1>
+
+            <div class="timeline-event">
+                <h2>Facility Manager - Lock Box Storage</h2>
+                <p>April 2022 - Present</p>
+                <p>Manage customer service, reservations, auctions, and coordinate maintenance for tenant satisfaction.</p>
+            </div>
+
+            <div class="timeline-event">
+                <h2>HR Administrator - Andretti Group</h2>
+                <p>December 2017 - March 2021</p>
+                <p>Oversaw HR duties, managed LMS, and led disaster relief efforts during Oregon wildfires.</p>
+            </div>
+
+            <div class="timeline-event">
+                <h2>Front Office - Airport Road Storage</h2>
+                <p>2021 - 2023</p>
+                <p>Handled StorEdge system operations, U-Haul scheduling, and retail sales.</p>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h3>Certifications</h3>
+            <ul>
+                <li>FAA Part 107 Certified</li>
+                <li>Ace Certified Personal Trainer (#T233849)</li>
+                <li>Various Online Certifications</li>
+            </ul>
+        </section>
+
+        <section class="interests">
+            <h3>Personal Interests</h3>
+            <p>Technology (3D Printing, Drones), Outdoor Sports (Kayaking, Snowboarding), and Animals (Fish, Reptiles, Dogs & Cats).</p>
+        </section>
+
+        <section class="carousel">
+            <img src="placeholder1.jpg" alt="Project Placeholder 1">
+            <img src="placeholder2.jpg" alt="Project Placeholder 2">
+            <img src="placeholder3.jpg" alt="Project Placeholder 3">
+        </section>
+
+        <section class="contact">
+            <h3>Contact</h3>
+            <p>For a detailed resume or inquiries, please email me at hyperfixationstudios@gmail.com.</p>
         </section>
     </main>
 
