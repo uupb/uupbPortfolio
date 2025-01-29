@@ -3,61 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Other Links</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .link-box {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #6f00ff;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .link-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .link-box h2 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .link-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        My Portfolio
+        Portfolio
     </header>
 
     <main>
-        <div class="nav-box" onclick="location.href='elite-dangerous-tools.html'">
-            <h2>Elite Dangerous Tools</h2>
-            <p>Utilities and data for Elite Dangerous pilots.</p>
-        </div>
-        
-        <div class="nav-box" onclick="location.href='portfolio.html'">
-            <h2>Portfolio</h2>
-            <p>My projects and work experience.</p>
-        </div>
 
-        <div class="nav-box" onclick="location.href='links.html'">
-            <h2>Links</h2>
-            <p>Find me on YouTube, Printables, and more.</p>
-        </div>
+        <section class="timeline">
+            <h1>Work Experience</h1>
+
+            <div class="timeline-event">
+                <h2>Front Office - Airport Road Storage</h2>
+                <p>2021 - 2023, 2024 - Present</p>
+                <p>Handled StorEdge system operations, U-Haul scheduling, and retail sales.</p>
+                <p>Worked the front office and used the StorEdge system to ensure tenants could access their units and pay bills. As well as schedule U-Haul and sell retail items.</p>
+            </div>
+
+            <div class="timeline-event">
+                <h2>Facility Manager - Lock Box Storage</h2>
+                <p>2022 - 2024</p>
+                <p>Manage customer service, reservations, auctions, and coordinate maintenance for tenant satisfaction.</p>
+                <p>Responsible for site management, including front office operations, customer service, and reservations. Coordinate with maintenance to prepare units for new tenants and auction as needed. </p>
+            </div>
+
+            <div class="timeline-event">
+                <h2>HR Administrator - Andretti Group</h2>
+                <p>2017 - 2021</p>
+                <p>Oversaw HR duties, managed LMS, and led disaster relief efforts during Oregon wildfires.</p>
+                <p>Oversaw development and implementation of COVID-19 response training to 1000+ individuals. Developed and distributed Disaster Relief Applications to those affected in the OR Talent fires to facilitate donations from CA and OR.</p>
+            </div>
+        </section>
+
+        <section>
+            
+            <div class="links-grid">
+                <div class="link-box" onclick="window.open('https://www.printables.com/@hyperFixationStudios', '_blank');">
+                    <img src="placeholder.jpg" alt="Printables">
+                    <h2>Printables</h2>
+                </div>
+                <div class="link-box" onclick="window.open('https://www.youtube.com/@hyperFixationStudios', '_blank');">
+                    <img src="placeholder.jpg" alt="YouTube">
+                    <h2>YouTube</h2>
+                </div>
+                <div class="link-box" onclick="window.open('https://github.com/uupb', '_blank');">
+                    <img src="placeholder.jpg" alt="GitHub">
+                    <h2>GitHub</h2>
+                </div>
+                <div class="link-box" onclick="window.open('https://www.instagram.com/hyperfixationstudios/', '_blank');">
+                    <img src="placeholder.jpg" alt="Instagram">
+                    <h2>Instagram</h2>
+                </div>
+                <div class="link-box"navigateTo('uupbOtherLinks');">
+                    <img src="placeholder.jpg" alt="Other Projects">
+                    <h2>Other</h2>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section class="cert-grid">
-        <div class="cert-box">
-            <a href="https://www.acefitness.org/" target="_blank">ACE Fitness Accreditation</a>
-        </div>
-        
-        <div class="cert-box">
-            <a href="https://www.faa.gov/uas/commercial_operators/part_107/" target="_blank">FAA Part 107</a>
-        </div>
-        
-        <div class="cert-box">
-            <p>Assorted Online Technical Certs</p>
-        </div>
-        
-        <div class="cert-box">
-            <a href="links.html">Other Links</a>
-        </div>
-        
-        <div class="cert-box">
-            <p>Placeholder</p>
-        </div>
-        
-        <div class="cert-box">
-            <p>Placeholder</p>
-        </div>
-    </section>
-
     <footer>
-        &copy; 2025 My Portfolio
+        hyperFixationStudios, All rights reserved.
     </footer>
-
 </body>
 </html>
