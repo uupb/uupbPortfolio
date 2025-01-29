@@ -1,4 +1,4 @@
-/* Base styling */
+/* Base Styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -18,7 +18,7 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    position: relative; /* Not fixed anymore */
+    position: relative;
 }
 
 /* Main Content */
@@ -57,8 +57,8 @@ main {
     color: #ccc;
 }
 
-/* Certifications Grid */
-.cert-grid {
+/* Certifications & Other Links Grid */
+.cert-grid, .links-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -67,7 +67,8 @@ main {
     margin-top: 2rem;
 }
 
-.cert-box {
+/* Certification & Link Boxes */
+.cert-box, .link-box {
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid #6f00ff;
     border-radius: 10px;
@@ -76,19 +77,19 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cert-box:hover {
+.cert-box:hover, .link-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.cert-box a {
+.cert-box a, .link-box a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.cert-box p {
+.cert-box p, .link-box p {
     font-size: 1rem;
     color: #ccc;
 }
@@ -104,16 +105,22 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    .cert-grid, .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .cert-grid, .links-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     header {
         font-size: 1.25rem;
     }
 
     footer {
         font-size: 0.75rem;
-    }
-
-    .cert-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
