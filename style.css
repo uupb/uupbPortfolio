@@ -123,15 +123,7 @@ main {
 .timeline-item:nth-child(even) {
     margin-right: 50%;
 }
-.timeline-item h2 {
-    font-size: 1.1rem; /* Smaller heading */
-    margin: 0.25rem 0; /* Reduced margin */
-}
 
-.timeline-item p {
-    font-size: 0.8rem; /* Smaller text */
-    margin: 0.25rem 0; /* Reduced margin */
-}
 @media (max-width: 600px) {
     header {
         font-size: 1.25rem;
