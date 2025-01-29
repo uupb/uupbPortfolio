@@ -69,20 +69,6 @@ main {
     padding: 2rem 0;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #6f00ff;
-    top: 50%;
-    left: 50%;
-    margin-left: -4px;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
 .timeline::before {
     content: '';
     position: absolute;
