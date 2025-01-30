@@ -17,6 +17,12 @@ body h3 {
     color: #919191;
 }
 
+body h2 {
+    font-size: 1.000rem;
+    margin: 0.5rem 0;
+    color: #d1d1d1;
+}
+
 header, footer {
     width: 100%;
     text-align: center;
@@ -103,9 +109,39 @@ main {
     color: #ccc;
 }
 
+.link-box {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #6f00ff;
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    background: radial-gradient(circle, #ffd300, #000000);
+    padding: 1%; /* Add padding around the image */
+    border-radius: 3px; /* Match the border radius of the .link-box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem; /* Add space between the image and text */
+    
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image scales down */
+    height: fit-content; /* Maintain aspect ratio */
+    border-radius: 3px; /* Optional: Add a slight border radius to the image */
+}
+
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: fit-content;
     margin: 0 auto;
     padding: 2rem 0;
 }
