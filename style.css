@@ -11,6 +11,12 @@ body {
     height: fit-content;
 }
 
+body h3 {
+    font-size: 0.750rem;
+    margin: 0.5rem 0;
+    color: #919191;
+}
+
 header, footer {
     width: 100%;
     text-align: center;
