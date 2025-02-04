@@ -1,4 +1,5 @@
 /* Base styling */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -109,6 +110,43 @@ main {
     color: #ccc;
 }
 
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.link-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #6f00ff;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.link-box h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.link-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
 .link-box {
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid #6f00ff;
@@ -124,19 +162,17 @@ main {
 
 .image-container {
     background: radial-gradient(circle, #ffd300, #000000);
-    padding: 1%; /* Add padding around the image */
-    border-radius: 3px; /* Match the border radius of the .link-box */
+    padding: .12rem; 
+    border-radius: 42px; 
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 1rem; /* Add space between the image and text */
-    
+    margin-bottom: 1rem;    
 }
 
 .image-container img {
-    max-width: 100%; /* Ensure the image scales down */
-    height: fit-content; /* Maintain aspect ratio */
-    border-radius: 3px; /* Optional: Add a slight border radius to the image */
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 3px; 
 }
 
 .timeline {
