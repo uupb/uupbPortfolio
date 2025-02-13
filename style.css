@@ -61,7 +61,7 @@ footer {
     gap: 1rem;
     width: 90%;
     max-width: fit-content;
-    margin: 2rem auto;
+    margin: 0 auto;
     justify-content: center;
 }
 
