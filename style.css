@@ -57,10 +57,10 @@ footer {
 
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     width: 90%;
-    max-width: 1200px;
+    max-width: fit-content;
     margin: 2rem auto;
     justify-content: center;
 }
@@ -158,6 +158,11 @@ footer {
     header img {
         max-height: 600px; 
     }
+
+    .links-grid {
+        grid-template-columns: repeat(auto-fit, minmax(clamp(150px, 20vw, 300px), 1fr));
+        gap: 2rem;
+      }
 }
 
 @media (max-width: 600px) {
