@@ -34,10 +34,10 @@ header img {
 }
 
 main {
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
     overflow-y: auto;
     align-content: center;
