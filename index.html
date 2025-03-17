@@ -3,47 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other Links</title>
+    <title>Overview</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
-    <body>
-        
-            <header>
-                <a href="https://hyperfixationstudios.dev">
-                    <img src="images/banner.png" alt="Drone Photo Banner">
-                </a>
-                <h1>Other Links</h1>
-            </header>
-            
-            <main>
-                <section>
-                    <div class="links-grid">
-                        <div class="link-box" onclick="window.open('https://www.printables.com/@hyperFixationStudios', '_blank');">
-                            <img src="images/pr.png" alt="Printables">
-                            <h2>Printables</h2>
-                        </div>
-                        <div class="link-box" onclick="window.open('https://www.youtube.com/@hyperFixationStudios', '_blank');">
-                            <img src="images/yt.png" alt="YouTube">
-                            <h2>YouTube</h2>
-                        </div>
-                        <div class="link-box" onclick="window.open('https://github.com/uupb', '_blank');">
-                            <img src="images/git.png" alt="GitHub">
-                            <h2>GitHub</h2>
-                        </div>
-                        <div class="link-box" onclick="window.open('https://www.instagram.com/hyperfixationstudios/', '_blank');">
-                            <img src="images/igb.png" alt="Instagram">
-                            <h2>Instagram</h2>
-                        </div>
-                        <div class="link-box"navigateTo('uupbOtherLinks');">
-                            <img src="images/question.png" alt="Other Projects">
-                            <h2>Other</h2>
+<body>
+    <header>
+        <a href="https://hyperfixationstudios.dev">
+            <img src="images/banner.png" alt="Drone Photo Banner">
+        </a>
+        <p>Overview</p>
+    </header>
+
+    <main>
+
+        <section class="timeline">
+    <h1>Work Experience</h1>
+
+    <div class="timeline-item">
+        <h2>Front Office - Airport Road Storage</h2>
+        <h2>2021 - 2023, 2024 - Present</h2>
+        <h3>Handled StorEdge system operations, U-Haul scheduling, and retail sales.</h3>
+        <h3>Worked the front office and used the StorEdge system to ensure tenants could access their units and pay bills. As well as schedule U-Haul and sell retail items.</h3>
+    </div>
+
+    <div class="timeline-item">
+        <h2>Facility Manager - Lock Box Storage</h2>
+        <h2>2022 - 2024</h2>
+        <h3>Manage customer service, reservations, auctions, and coordinate maintenance for tenant satisfaction.</h3>
+        <h3>Responsible for site management, including front office operations, customer service, and reservations. Coordinate with maintenance to prepare units for new tenants and auction as needed.</h3>
+    </div>
+
+    <div class="timeline-item">
+        <h2>HR Administrator - Andretti Group</h2>
+        <h2>2017 - 2021</h2>
+        <h3>Oversaw HR duties, managed LMS, and led disaster relief efforts during Oregon wildfires.</h3>
+        <h3>Oversaw development and implementation of COVID-19 response training to 1000+ individuals. Developed and distributed Disaster Relief Applications to those affected in the OR Talent fires to facilitate donations from CA and OR.</h3>
+    </div>
+</section>
+
+        <section>
+            <div class="links-grid">
+                <!-- Box 1: Associates in Computer Science -->
+                <div class="image-container">
+                    <div class="link-box expandable" onclick="toggleExpand(this)">
+                        <img src="images/certificate.png" alt="Associates in Computer Science">
+                        <h2>Associates in Computer Science</h2>
+                        <h3>Graduated from University of the people</h3>
+                        <div class="additional-content">
+                            <p>Completed coursework in programming, algorithms, networking, and data structures. Developed projects using Python, Java, and SQL.</p>
                         </div>
                     </div>
-                </section>
-            </main>
+                </div>
+        
+                <!-- Box 2: ACE Fitness Personal Trainer -->
+                <div class="image-container">
+                    <div class="link-box expandable" onclick="toggleExpand(this)">
+                        <img src="images/weight-bar.png" alt="ACE Fitness Personal Trainer">
+                        <h2>ACE Fitness Personal Trainer</h2>
+                        <h3>Personal Trainer with a specialization in Sports Nutrition</h3>
+                        <div class="additional-content">
+                            <p>Certified by ACE Fitness. Specialized in creating personalized fitness and nutrition plans for athletes.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Box 3: FAA Part 107 -->
+                <div class="image-container">
+                    <div class="link-box expandable" onclick="toggleExpand(this)">
+                        <img src="images/drone.png" alt="FAA Part 107">
+                        <h2>FAA Part 107</h2>
+                        <h3>Registered drone pilot</h3>
+                        <div class="additional-content">
+                            <p>Certified by the FAA to operate drones commercially. Experienced in aerial photography, cinematography, and mapping.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Box 4: The Redwood League -->
+                <div class="image-container">
+                    <div class="link-box expandable" onclick="toggleExpand(this)">
+                        <img src="images/TRL.png" alt="The Redwood League">
+                        <h2>The Redwood League</h2>
+                        <h3>Started and manage Humboldt's largest PokemonGo Discord</h3>
+                        <div class="additional-content">
+                            <p>Community leader for a local Pokémon Go group. Organized events, raids, and community meetups.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Box 5: Duolingo Progress -->
+                <div class="image-container">
+                    <div class="link-box expandable" onclick="toggleExpand(this)">
+                        <img src="images/owl.png" alt="Duolingo Progress">
+                        <h2>Duolingo Progress</h2>
+                        <h3>I can read a few languages</h3>
+                        <div class="additional-content">
+                            <p>Proficient in reading Spanish and French. Currently learning ASL and Latin.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Box 6: Other Projects -->
+                <div class="image-container">
+                    <div class="link-box expandable" onclick="toggleExpand(this)">
+                        <img src="images/question.png" alt="Other Projects">
+                        <h2>Other</h2>
+                        <h3>Links to some of my other projects</h3>
+                        <div class="additional-content">
+                            <p>Explore my other projects, including web development, photography, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <footer>
-                hyperFixationStudios, All rights reserved.
-            </footer>
-    </body>
+    <footer>
+        hyperFixationStudios, All rights reserved.
+    </footer>
+</body>
 </html>
