@@ -25,6 +25,11 @@ body h3 {
     color: #919191;
 }
 
+body li {
+    font-size: 0.66rem;
+    color: #777070;
+}
+
 
 /* Header Styles */
 header {
