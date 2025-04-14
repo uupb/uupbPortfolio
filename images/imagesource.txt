@@ -17,3 +17,5 @@ web-programming - <a href="https://www.flaticon.com/free-icons/code" title="code
 Film Editing - <a href="https://www.flaticon.com/free-icons/video-editing" title="video editing icons">Video editing icons created by Eucalyp - Flaticon</a>
 
 3d Printer - <a href="https://www.flaticon.com/free-icons/3d-print" title="3d print icons">3d print icons created by Freepik - Flaticon</a>
+
+Question Cube - <a href="https://www.flaticon.com/free-icons/mystery-box" title="mystery box icons">Mystery box icons created by artcus - Flaticon</a>
