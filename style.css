@@ -137,6 +137,12 @@ main {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.image-container.full-width {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 
 /* Expandable Content */
 .link-box.expandable {
